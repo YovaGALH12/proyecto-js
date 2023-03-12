@@ -1,3 +1,28 @@
+¿Que es HTML?
+    Sus siglas son HYPER TEXT MARKUP LENGUAJE
+    Es el lenguaje estandar para crear paginas web
+
+    Consiste de etiquetas:
+        Las etiquetas vienen estructuradas de una apertura y un cierre, ejemplo:
+        <SoyUnaEtiqueta> Contenido de la etiqueta </SoyUnaEtiqueta>
+
+Estrutura de un HTML:       DATO!, se puede agregar la estructura automaticamente con "!" "Emmet Abbreviation"
+<html>  Base de la estructura
+    <head>  En esta etiqueta nos permite colocar codigo no visible al usuario 
+        <title>Esta etiqueta significa titulo de la pagina web</title>
+    </head>
+    <body>  En esta etiqueta colocamos el codigo que va a hacer visible en nuestra pag web
+        <h1>Esta etiqueta significa "TITULO"</h1>
+        <p>Esta etiqueta significa "PARRAFO"</p>
+    </body>
+
+</html>
+
+    Le indica al explorador que y como mostrarlo
+    Las etiquetas indican: parrafos, vinculos, titulos, links, cabezera, cuerpo, etc
+
+
+
 Que puede hacer un computador?
 - Sumar
 - Restar
@@ -21,7 +46,7 @@ Tipos de datos:
 - "Funciones" -> La variable "Function", consiste en recordar y poder reutilizar la informacion del algoritmo
     Ejemplo=
 
-Function EntrarALaCasa();
+Function -> EntrarALaCasa() <- Indicamos con los parentesis, que la funcion sea ejecutada
     1. Acercarse a la puerta
     2. Levantar la mano
     3. Tomar la manilla
@@ -36,3 +61,31 @@ Function EntrarALaCasa();
     12. Cerrar la puerta
 
 Como hacemos para llamar una funcion en cualquier lenguaje de programacion?:
+
+function EntrarALaCasa(Persona);
+    si Persona.edad > 17;   -> IF, condicion para control de flujo de las aplicaciones
+        EntrarALaCasa
+    sino:                   -> ELSE, Condicion
+        Vete de aqui!
+
+Orientacion a objetos, es un paradigma, una forma de como resolver problemas, Ejemplo:
+
+class Personas {                 Ejemplo = Personas, es una clase
+    edad: Integer
+    nombre: String
+    colorcabello: String
+    decirNombre();
+        habla {tu nombre}
+}
+
+PersonaYova = new Personas(      Ejemplo = PersonaYova, es un objeto, se crea en base a la clase "Personas"
+    edad: 23
+    nombre: "Yova"
+    colorcabello: "castaño"
+)
+
+PersonaDiana = new Personas(
+    edad: 53
+    nombre: "Diana"
+    colorcabello: "cobre"
+)
